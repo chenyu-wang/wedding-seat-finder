@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Seat Finder - Chenyu & Ping</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="images/Logo with Date inside.png" alt="Chenyu & Ping Wedding Logo" class="logo-image">
+            </div>
+            <h1>Find Your Seat</h1>
+            <p class="subtitle">Enter your name to find your table and seat location</p>
+        </header>
+
+        <main>
+            <div class="search-section">
+                <div class="search-form">
+                    <input type="text" id="guestSearch" placeholder="Enter your name..." autocomplete="off">
+                    <div id="searchResults" class="search-results"></div>
+                </div>
+                <div class="button-group">
+                    <button type="button" id="searchButton">Search</button>
+                    <button type="button" id="clearButton">Clear</button>
+                </div>
+            </div>
+
+            <div id="guestInfo" class="guest-info hidden">
+                <div class="guest-details">
+                    <h2 id="guestName"></h2>
+                    <div class="seat-info">
+                        <div class="table-info">
+                            <span class="table-number" id="tableNumber"></span>
+                            <span class="seat-number" id="seatNumber"></span>
+                        </div>
+                    </div>
+                    <div id="familyMembers" class="family-members"></div>
+                </div>
+                
+                <div class="venue-section">
+                    <h3>Venue Layout</h3>
+                    <div class="venue-layout">
+                        <img src="images/Venue Layout.png" alt="Wedding Venue Layout" class="venue-image">
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Chenyu & Ping • September 21, 2025</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
