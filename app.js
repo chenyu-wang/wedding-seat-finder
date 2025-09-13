@@ -7,24 +7,23 @@ const WEDDING_DATA = {
         { name: 'Ping Li', family: "Ping Li's", table: 'Bridal Party', seat: 4, role: 'Bride' },
         
         // Bridal Party
-        { name: 'Angela Fong', family: 'Bridal Party', table: 'Bridal Party', seat: 8, role: 'Bridesmaid' },
-        { name: 'Monica Yaw', family: 'Bridal Party', table: 'Bridal Party', seat: 6, role: 'Bridesmaid' },
-        { name: 'Sabrina Zhou', family: 'Bridal Party', table: 'Bridal Party', seat: 7, role: 'Maid-of-honor' },
-        { name: 'Roger Chuang', family: 'Bridal Party', table: 'Bridal Party', seat: 3, role: 'Best Man' },
-        { name: 'Ernest Wijaya', family: 'Bridal Party', table: 'Bridal Party', seat: 2, role: 'Groomsmen' },
-        { name: 'Lester Aguda', family: 'Bridal Party', table: 'Bridal Party', seat: 1, role: 'Groomsmen' },
+        { name: 'Lester Aguda', family: "Thomas Aguda's", table: 'Bridal Party', seat: 1, role: 'Groomsmen' },
+        { name: 'Ernest Wijaya', family: 'Individual', table: 'Bridal Party', seat: 2, role: 'Groomsmen' },
+        { name: 'Roger Chuang', family: "Roger Chuang's", table: 'Bridal Party', seat: 3, role: 'Best Man' },
+        { name: 'Monica Yaw', family: 'Individual', table: 'Bridal Party', seat: 6, role: 'Bridesmaid' },
+        { name: 'Sabrina Zhou', family: 'Individual', table: 'Bridal Party', seat: 7, role: 'Maid-of-honor' },
+        { name: 'Angela Fong', family: 'Individual', table: 'Bridal Party', seat: 8, role: 'Bridesmaid' },
 
         // Table 1
         { name: 'Sonia Suputri', family: "Renaldy Chian's", table: 1, seat: 1 },
         { name: 'Evelyn Ong', family: 'Individual', table: 1, seat: 2 },
         { name: 'Tiffany Tan', family: 'Individual', table: 1, seat: 3 },
         { name: 'Elizabeth Tan', family: 'Individual', table: 1, seat: 4 },
-        { name: 'Arielle Hsu', family: "Arielle Hsu's", table: 1, seat: 5 },
-        { name: 'Mia Qian', family: "Jinpeng's", table: 1, seat: 6 },
-        { name: 'Edward Guan', family: "Jinpeng's", table: 1, seat: 7 },
-        { name: 'James Han', family: 'Individual', table: 1, seat: 8 },
-        { name: 'George Yuan', family: 'Individual', table: 1, seat: 9 },
-        { name: 'Renaldy Chian', family: "Renaldy Chian's", table: 1, seat: 10 },
+        { name: 'Mia Qian', family: "Jinpeng's", table: 1, seat: 5 },
+        { name: 'Edward Guan', family: "Jinpeng's", table: 1, seat: 6 },
+        { name: 'James Han', family: 'Individual', table: 1, seat: 7 },
+        { name: 'George Yuan', family: 'Individual', table: 1, seat: 8 },
+        { name: 'Renaldy Chian', family: "Renaldy Chian's", table: 1, seat: 9 },
 
         // Table 2
         { name: 'Vivian Cheng', family: 'Vivian', table: 2, seat: 1 },
@@ -41,7 +40,7 @@ const WEDDING_DATA = {
         { name: 'Pin Tan', family: "Pin Tan's", table: 3, seat: 1 },
         { name: 'Caleb Win', family: "Lyndon Win's", table: 3, seat: 2 },
         { name: 'Ivana Win', family: "Lyndon Win's", table: 3, seat: 3 },
-        { name: 'Grace Win', family: "Lyndon Win's", table: 3, seat: 4 },
+        { name: 'Grace Win', family: "Lyndon Win's", table: 3, seat: 4, role: 'Flower Girl' },
         { name: 'Lyndon Win', family: "Lyndon Win's", table: 3, seat: 5 },
         { name: 'Hendra Wijaya', family: 'Individual', table: 3, seat: 6 },
         { name: 'Daniel Gunawan', family: "Daniel Gunawan's", table: 3, seat: 7 },
@@ -58,20 +57,19 @@ const WEDDING_DATA = {
         { name: 'Jordan Suwarno', family: "Benny Suwarno's", table: 4, seat: 6 },
         { name: 'Josiah Suwarno', family: "Benny Suwarno's", table: 4, seat: 7 },
         { name: 'Tirza Suwarno', family: "Benny Suwarno's", table: 4, seat: 8 },
-        { name: 'Maddie Guggisberg', family: 'Mr. G', table: 4, seat: 9 },
-        { name: 'Patrick Guggisberg', family: 'Mr. G', table: 4, seat: 10 },
+        { name: 'Maddie Guggisberg', family: "Mr. G", table: 4, seat: 9 },
+        { name: 'Patrick Guggisberg', family: "Mr. G", table: 4, seat: 10 },
 
         // Table 5
-        { name: 'Iechi Suen', family: 'Individual', table: 5, seat: 1 },
-        { name: 'Natalie Tan', family: 'Individual', table: 5, seat: 2 },
+        { name: 'Mandy Chang', family: 'Individual', table: 5, seat: 1 },
+        { name: 'Jacquelyn Chong', family: 'Individual', table: 5, seat: 2 },
         { name: 'Michelle Leman', family: "Clement Chan's", table: 5, seat: 3 },
         { name: 'Esther Chan', family: "Clement Chan's", table: 5, seat: 4 },
         { name: 'Elijah Chan', family: "Clement Chan's", table: 5, seat: 5 },
         { name: 'Clement Chan', family: "Clement Chan's", table: 5, seat: 6 },
         { name: 'Jefferson Karim', family: 'Individual', table: 5, seat: 7 },
         { name: 'Rudy Rusli', family: 'Individual', table: 5, seat: 8 },
-        { name: 'Jacquelyn Chong', family: 'Individual', table: 5, seat: 9 },
-        { name: 'Mandy Chang', family: 'Individual', table: 5, seat: 10 },
+        { name: 'Senjaya Tresna', family: 'Individual', table: 5, seat: 9 },
 
         // Table 6
         { name: 'Intan Chen', family: "Harry Chen's", table: 6, seat: 1 },
@@ -135,13 +133,14 @@ const WEDDING_DATA = {
         // Table 11
         { name: 'Sarah Tranthim-Fryer', family: "Tranthim-Fryer's", table: 11, seat: 1 },
         { name: 'Priscilla Suwarno', family: 'Individual', table: 11, seat: 2 },
-        { name: 'Senjaya Tresna', family: 'Individual', table: 11, seat: 3 },
-        { name: 'Rudy Suwarno', family: 'Individual', table: 11, seat: 4 },
-        { name: 'Keren Chai', family: 'Individual', table: 11, seat: 5 },
-        { name: 'Jyoti Tamang', family: 'Individual', table: 11, seat: 6 },
-        { name: 'Sky Zhang', family: 'Individual', table: 11, seat: 7 },
-        { name: 'Stephen Den Boer', family: 'Individual', table: 11, seat: 8 },
-        { name: 'Cameron Tranthim-Fryer', family: "Tranthim-Fryer's", table: 11, seat: 9 },
+        { name: 'Iechi Suen', family: 'Individual', table: 11, seat: 3 },
+        { name: 'Natalie Tan', family: 'Individual', table: 11, seat: 4 },
+        { name: 'Jyoti Tamang', family: 'Individual', table: 11, seat: 5 },
+        { name: 'Keren Chai', family: 'Individual', table: 11, seat: 6 },
+        { name: 'Rudy Suwarno', family: 'Individual', table: 11, seat: 7 },
+        { name: 'Sky Zhang', family: 'Individual', table: 11, seat: 8 },
+        { name: 'Stephen Den Boer', family: 'Individual', table: 11, seat: 9 },
+        { name: 'Cameron Tranthim-Fryer', family: "Tranthim-Fryer's", table: 11, seat: 10 },
 
         // Table 12
         { name: 'Nora Hao', family: "Nora's", table: 12, seat: 1 },
@@ -275,7 +274,12 @@ class WeddingSeatFinder {
     }
 
     handleEnterKey() {
-        const results = this.searchGuests(this.searchInput.value);
+        const searchValue = this.searchInput.value.trim();
+        if (searchValue.length === 0) {
+            return; // Don't search if input is empty
+        }
+        
+        const results = this.searchGuests(searchValue);
         if (results.length > 0) {
             this.selectGuest(results[0]);
         }
@@ -283,6 +287,10 @@ class WeddingSeatFinder {
 
     searchGuests(query) {
         const searchTerm = query.toLowerCase().trim();
+        if (searchTerm.length === 0) {
+            return []; // Return empty array for empty search
+        }
+        
         return WEDDING_DATA.guests.filter(guest => 
             guest.name.toLowerCase().includes(searchTerm)
         ).slice(0, 10); // Limit to 10 results
@@ -350,8 +358,12 @@ class WeddingSeatFinder {
             return;
         }
 
+        const familyText = familyMembers.length === 1 
+            ? "Also, We've found the seat for your family member." 
+            : "Also, We've found the seats for your family members.";
+            
         const familyHtml = `
-            <h4>Also seated with you:</h4>
+            <h4>${familyText}</h4>
             ${familyMembers.map(member => `
                 <div class="family-member">
                     <span class="member-name">${member.name}</span>
