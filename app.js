@@ -345,7 +345,7 @@ class WeddingSeatFinder {
 
         // Show the guest info section
         this.guestInfo.classList.remove('hidden');
-        
+
         // Scroll to guest info
         this.guestInfo.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
@@ -379,8 +379,8 @@ class WeddingSeatFinder {
 
     getFamilyMembers(family, guestName) {
         if (family === 'Individual') return [];
-        
-        return WEDDING_DATA.guests.filter(guest => 
+
+        return WEDDING_DATA.guests.filter(guest =>
             guest.family === family && guest.name !== guestName
         );
     }
@@ -389,16 +389,16 @@ class WeddingSeatFinder {
     clearAll() {
         // Clear search input
         this.searchInput.value = '';
-        
+
         // Hide search results
         this.hideSearchResults();
-        
+
         // Hide guest info
         this.guestInfo.classList.add('hidden');
-        
+
         // Reset current guest
         this.currentGuest = null;
-        
+
         // Focus back on search input
         this.searchInput.focus();
     }
